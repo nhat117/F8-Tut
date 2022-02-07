@@ -7,8 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/base.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 </head>
@@ -246,8 +245,69 @@
             </div>
         </div>
     </header>
-    <div class="container">
+    <div class="app__container">
+        <div class="grid">
+            <div class="grid__row app__content">
+                <div class="grid__column-2">
+                    <nav class="category">
+                        <h3 class="category__heading">
+                            <i class="fas fa-list"></i>
+                            Category
+                        </h3>
 
+                        <ul class="category-list">
+                            <li class="category-item category-item--active">
+                                <a href="" class="category-item__link">Trang điểm mặt</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Trang điểm môi</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Trang điểm mắt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="grid__column-10">
+                    <div class="home-filter">
+                        <span class="home-filter__label">Sort By</span>
+                        <button class="home-filter__btn btn">Popular</button>
+                        <button class="home-filter__btn btn btn--primary">New Product</button>
+                        <button class="home-filter__btn btn">Best-Seller</button>
+
+                        <div class="select-input">
+                           <span class="select-input__label">Price</span>
+                            <i class="select-input__icon fas fa-angle-down"></i>
+<!--                                List options-->
+                            <ul class="select-input__list">
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Price: Low to High</a>
+                                </li>
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Price: High to Low</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="home-filter__pagination">
+                            <span class="home-filter__pagination-num">
+                                <span class="home-filter__pagination-current">1</span>/14
+                            </span>
+                            <div class="home-filter__pagination-control">
+                                <a href="" class="home-filter__pagination-page-btn home-filter__pagination-page-btn--disabled">
+                                    <i class="home-filter__pagination-icon fas fa-angle-left"></i>
+                                </a>
+                                <a href="" class="home-filter__pagination-page-btn">
+                                    <i class="home-filter__pagination-icon fas fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
