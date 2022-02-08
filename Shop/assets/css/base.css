@@ -9,6 +9,7 @@
     --header-height: 120px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
     --start-gold-color: #ffce3e
+    --height: 40px;
 }
 
 * {
@@ -174,6 +175,7 @@ p {
     padding: 8px 16px;
     list-style: none;
     display: none;
+    z-index: 3;
 }
 
 .select-input:hover .select-input__list{
@@ -204,3 +206,48 @@ p {
     position: relative;
     top: 1px;
 }
+
+/*pagination*/
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-item{
+    margin: 0 6px;
+}
+
+.pagination-item__link{
+    display: block;
+    color: #939393;
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-decoration: none;
+    min-width: 40px;
+    height: var(--height);
+    line-height: 2.3rem;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.pagination-item__icon{
+
+}
+
+.pagination-item--active .pagination-item__link{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item--active .pagination-item__link:hover{
+    filter: brightness(110%);
+}
+
+
+
+
+
+
