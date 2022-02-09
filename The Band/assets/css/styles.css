@@ -11,6 +11,11 @@ html{
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
+body{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
  /*Positon*/
 /*Size Width height */
 /*Color*/
@@ -20,16 +25,20 @@ html{
 /*Tu ngoai vao trong*/
 /*Tong quan den chi tiet*/
 .main{
-
 }
 
 .header{
     height: 46px;
     background-color: #000;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    right: 0;
 }
 
 .header__nav{
-
+    display: inline-block;
 }
 
 .header__nav-item{
@@ -47,8 +56,15 @@ html{
     color: #fff;
     text-decoration: none;
     line-height: 4.6rem;
+    font-weight: 500;
     padding: 0 24px;
+}
 
+.header__nav-item-icon{
+    position: relative;
+    top: 1px;
+    right: -3px;
+    font-size:1.2rem;
 }
 
 .header__nav-item:hover .header__nav-item-sub-nav{
@@ -84,11 +100,56 @@ html{
     padding: 0 23px;
 }
 
+/*Search button*/
+.header__search-btn{
+    position: relative;
+    float: right;
+    line-height: 4.8rem;
+    padding: 0 20px;
+    cursor: pointer;
+    top:  -2px;
+}
+
+.header__search-btn:hover{
+    background-color:#f44336;
+}
+
+.header__search-icon{
+    position: relative;
+    top: 5px;
+    color: #fff;
+    font-size: 2rem;
+}
 
 .slider{
-    min-height: 500px;
-    background-color:#fff;
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('img/chicago.jpg') top center / cover no-repeat;
 }
+
+.slider__text{
+    position: absolute;
+    left: 50%;
+    bottom: 48px;
+    color: #FFF;
+    text-align: center;
+    transform: translateX(-50%);
+
+}
+
+.slider__text-heading{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.slider__text-description{
+    font-size: 2.4rem;
+    margin-top: 25px;
+}
+
+
+
 
 .content{
 
