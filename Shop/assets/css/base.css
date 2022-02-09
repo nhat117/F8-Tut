@@ -1,14 +1,22 @@
 /*Base for website*/
+@font-face {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/cabin/v18/u-4X0qWljRw-PfU81xCKCpdpbgZJl6XFpfEd7eA9BIxxkV2EH7mlx17r.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
 :root {
     --white-color: #fff;
     --black-color: #000;
-    --text-color: #333;
+    --text-color: #333;i
     --primary-color: rgb(238, 77, 45);
     --border-color: #dbdbdb;
     --navbar-height: 34px;
     --header-height: 120px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
-    --start-gold-color: #ffce3e
+    --start-gold-color: #ffce3e;
     --height: 40px;
 }
 
@@ -19,7 +27,7 @@
 html {
     /*Hack*/
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cabin', sans-serif;
     box-sizing: border-box;
 }
 
