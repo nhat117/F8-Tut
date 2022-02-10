@@ -57,20 +57,19 @@
                 laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.</p>
-            <div class="section__member-list">
-                <div class="section__member-item">
+            <div class="row section__member-list">
+                <div class="text--center col col-3">
                     <p class="section__member-name">Name</p>
                     <img src="./assets/css/img/bandmember.jpg" alt="" class="section__member-img">
                 </div>
-                <div class="section__member-item">
+                <div class="text--center col col-3">
                     <p class="section__member-name">Name</p>
                     <img src="./assets/css/img/bandmember.jpg" alt="" class="section__member-img">
                 </div>
-                <div class="section__member-item">
+                <div class="text--center col col-3">
                     <p class="section__member-name">Name</p>
                     <img src="./assets/css/img/bandmember.jpg" alt="" class="section__member-img">
                 </div>
-                <div class="clear"></div>
             </div>
         </div>
 
@@ -94,32 +93,32 @@
                     </li>
                 </ul>
                 <!--                Place-->
-                <div class="places-list">
-                    <div class="places-item">
+                <div class="row places-list">
+                    <div class="col-3 col">
                         <img src="./assets/css/img/paris.jpg" alt="" class="places-img">
                         <div class="places-body">
                             <h3 class="places-heading">Paris</h3>
                             <p class="places-time">Fri 27 Nov 2022</p>
                             <div class="places-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                            <a href="" class="places-buy-btn">Buy Tickets</a>
+                            <a class="places-buy-btn js-buy-ticket">Buy Tickets</a>
                         </div>
                     </div>
-                    <div class="places-item">
+                    <div class="col-3 col">
                         <img src="./assets/css/img/newyork.jpg" alt="" class="places-img">
                         <div class="places-body">
                             <h3 class="places-heading">New York</h3>
                             <p class="places-time">Sat 28 Nov 2022</p>
                             <div class="places-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                            <a href="" class="places-buy-btn">Buy Tickets</a>
+                            <a class="places-buy-btn js-buy-ticket">Buy Tickets</a>
                         </div>
                     </div>
-                    <div class="places-item">
+                    <div class="col-3 col">
                         <img src="./assets/css/img/sanfran.jpg" alt="" class="places-img">
                         <div class="places-body">
                             <h3 class="places-heading">San Francisco</h3>
                             <p class="places-time">Sun 29 Nov 2022</p>
                             <div class="places-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                            <a href="" class="places-buy-btn">Buy Tickets</a>
+                            <a class="places-buy-btn js-buy-ticket">Buy Tickets</a>
                         </div>
                     </div>
                 </div>
@@ -131,6 +130,44 @@
         <div class="content__section">
             <h2 class="section__heading">Contact</h2>
             <p class="section__sub-heading">Fan? Drop a note!</p>
+            <div class="row contact__content">
+                <div class="col col-half contact__info">
+                    <p class="section__text">
+                        <i class="contact__info-icon ti-location-pin"></i>
+                        Chicago, US
+                    </p>
+                    <p class="section__text">
+                        <i class="contact__info-icon ti-mobile"></i>
+                        Phone: +12345-220
+                    </p>
+                    <p class="section__text">
+                        <i class="contact__info-icon ti-email"></i>
+                        Email: nhat@email.com
+                    </p>
+                </div>
+                <div class="col col-half contact__form">
+                    <form action="" class="contact__section">
+                        <div class="row">
+                            <div class="col col-half">
+                                <input type="text" name="" required id="" placeholder="Name"
+                                       class="contact__form-input">
+                            </div>
+                            <div class="col col-half">
+                                <input type="email" name="" required id="" placeholder="Email"
+                                       class="contact__form-input">
+                            </div>
+                        </div>
+
+                        <div class="row mt--8">
+                            <div class="col col-full">
+                                <input type="text" name="" required id="" placeholder="Message"
+                                       class="contact__form-input">
+                            </div>
+                        </div>
+                        <input class="mt--16 contact__form-submit-btn" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -138,9 +175,9 @@
 
     </footer>
 </div>
-<div class="modal open">
-    <div class="modal__container">
-        <div class="modal__close">
+<div class="modal js-modal">
+    <div class="modal__container js-modal-container">
+        <div class="modal__close js-modal-close">
             <i class="ti-close"></i>
         </div>
 
@@ -166,7 +203,7 @@
             <input type="email" id="ticket__qty" class="modal__input" placeholder="Enter email address">
 
             <div class="modal__button-wrapper">
-                <a href="" class="modal__buy-btn">
+                <a class="modal__buy-btn">
                     Pay
                     <i class="ti-check"></i>
                 </a>
@@ -174,10 +211,11 @@
         </div>
         <footer class="modal__footer">
             <p class="modal__footer-help">Need
-                <a href="" class="modal__footer-text">helps?</a>
+                <a href="#" class="modal__footer-text">helps?</a>
             </p>
         </footer>
     </div>
 </div>
+<script src="src/buyTicket.js"></script>
 </body>
 </html>
