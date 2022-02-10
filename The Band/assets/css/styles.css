@@ -1,22 +1,30 @@
 /*Reset css*/
-*{
+* {
     /*Emmet*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
-body{
+body {
     font-size: 1.5rem;
     line-height: 1.5rem;
 }
 
- /*Positon*/
+.clear {
+    clear: both;
+}
+
+.text--white {
+    color: #fff !important;
+}
+
+/*Positon*/
 /*Size Width height */
 /*Color*/
 /*Shape*/
@@ -24,10 +32,10 @@ body{
 /*1 Tu tren xuong duoi*/
 /*Tu ngoai vao trong*/
 /*Tong quan den chi tiet*/
-.main{
+.main {
 }
 
-.header{
+.header {
     height: 46px;
     background-color: #000;
     position: fixed;
@@ -37,20 +45,20 @@ body{
     right: 0;
 }
 
-.header__nav{
+.header__nav {
     display: inline-block;
 }
 
-.header__nav-item{
+.header__nav-item {
     display: inline-block;
 }
 
-.header__nav-item:hover .header__nav-item-link{
+.header__nav-item:hover .header__nav-item-link {
     color: #000;
     background-color: #ccc;
 }
 
-.header__nav-item-link{
+.header__nav-item-link {
     display: inline-block;
     text-transform: uppercase;
     color: #fff;
@@ -60,18 +68,18 @@ body{
     padding: 0 24px;
 }
 
-.header__nav-item-icon{
+.header__nav-item-icon {
     position: relative;
     top: 1px;
     right: -3px;
-    font-size:1.2rem;
+    font-size: 1.2rem;
 }
 
-.header__nav-item:hover .header__nav-item-sub-nav{
+.header__nav-item:hover .header__nav-item-sub-nav {
     display: block;
 }
 
-.header__nav-item-sub-nav{
+.header__nav-item-sub-nav {
     /*top: 100%;*/
     /*left: 0;*/
     min-width: 160px;
@@ -79,21 +87,21 @@ body{
     position: absolute;
     background-color: #fff;
     list-style: none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.header__sub-nav-item{
+.header__sub-nav-item {
     position: relative;
     display: block;
 }
 
-.header__sub-nav-item:hover .header__sub-nav-item-link{
+.header__sub-nav-item:hover .header__sub-nav-item-link {
     background-color: #ccc;
     color: #000;
 }
 
 
-.header__sub-nav-item-link{
+.header__sub-nav-item-link {
     display: block;
     color: #000;
     text-decoration: none;
@@ -102,34 +110,34 @@ body{
 }
 
 /*Search button*/
-.header__search-btn{
+.header__search-btn {
     position: relative;
     float: right;
     line-height: 4.8rem;
     padding: 0 20px;
     cursor: pointer;
-    top:  -2px;
+    top: -2px;
 }
 
-.header__search-btn:hover{
-    background-color:#f44336;
+.header__search-btn:hover {
+    background-color: #f44336;
 }
 
-.header__search-icon{
+.header__search-icon {
     position: relative;
     top: 5px;
     color: #fff;
     font-size: 2rem;
 }
 
-.slider{
+.slider {
     position: relative;
     margin-top: 46px;
-    padding-top: 50%;
+    padding-top: 30%;
     background: url('img/chicago.jpg') top center / cover no-repeat;
 }
 
-.slider__text{
+.slider__text {
     position: absolute;
     left: 50%;
     bottom: 48px;
@@ -139,23 +147,286 @@ body{
 
 }
 
-.slider__text-heading{
+.slider__text-heading {
     font-size: 3rem;
     font-weight: 500;
 }
 
-.slider__text-description{
+.slider__text-description {
     font-size: 2.4rem;
     margin-top: 25px;
 }
 
 
-
-
-.content{
+.content {
 
 }
 
-.footer{
+.content__section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section__heading {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.section__sub-heading {
+    font-size: 1.5rem;
+    margin: 25px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.section__heading,
+.section__sub-heading {
+    text-align: center;
+}
+
+.section__about-text {
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 2.1rem;
+}
+
+/*Member*/
+.section__member-list {
+    display: flex;
+    margin-top: 48px;
+    justify-content: space-between;
+}
+
+.section__member-item {
+    float: left;
+    text-align: center;
+}
+
+.section__member-name {
+    font-size: 1.5rem;
+}
+
+.section__member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+.tour__section {
+
+}
+
+
+.tour__section {
+    background-color: #000;
+}
+
+.ticket-list {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.ticket__item {
+    font-size: 1.5rem;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.ticket-sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.ticket-quantity {
+    margin-top: -2px;
+    float: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.4rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.places-list {
+    display: flex;
+    margin: 32px -8px 0 -8px;
+    justify-content: space-between;
+    padding-bottom: 48px;
+}
+
+.places-item {
+    padding: 0 8px;
+}
+
+.places-img {
+    display: block;
+    width: 100%;
+}
+
+.places-img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.places-body {
+    padding: 16px;
+    font-size: 1.5rem;
+    background-color: #fff;
+}
+
+.places-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.places-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.places-desc {
+    margin-top: 15px;
+    line-height: 1.4rem;
+}
+
+.places-buy-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.places-buy-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+/*Ticket modal*/
+.modal.open {
+    display: flex;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    display: none;
+    justify-content: center;
+}
+
+.modal__container {
+    position: relative;
+    background-color: #fff;
+    width: calc(100% - 32px);
+    min-height: 200px;
+}
+
+/*Close button*/
+.modal__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    /*background-color:*/
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.modal__close:hover {
+    opacity: 1;
+}
+
+.modal__header {
+    background: #009688;
+    min-height: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal__header-icon {
+    padding-right: 16px;
+}
+
+/*Modal Body*/
+.modal__body {
+    padding: 16px;
+}
+
+.modal__body-label {
+    font-size: 1.5rem;
+    display: block;
+}
+
+.modal__input {
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-bottom: 24px;
+    border-radius: 2px;
+}
+
+.modal__body-label {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.modal__button-wrapper {
+    margin-top: 18px;
+    width: 100%;
+    background-color: #009688;
+    display: flex;
+    justify-content: center;
+    height: 49px;
+    cursor: pointer;
+}
+
+.modal__button-wrapper:hover {
+    opacity: 0.9;
+}
+
+.modal__buy-btn {
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+.modal__footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal__footer-text {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.footer {
 
 }
