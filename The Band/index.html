@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link href="./assets/css/styles.css" rel="stylesheet">
+    <link href="./assets/css/responsive.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://icons.iconarchive.com/icons/iconsmind/outline/128/Headphone-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -13,24 +15,27 @@
 <div class="main">
     <div class="header">
         <!--            Nav-->
-
+        <div class="header__menu-mobile-btn js-mobile-menu">
+            <i class="header__menu-mobile-icon ti-menu"></i>
+        </div>
         <ul class="header__nav">
-            <li class="header__nav-item"><a class="header__nav-item-link" href="">Home</a></li>
-            <li class="header__nav-item"><a class="header__nav-item-link" href="">Band</a></li>
-            <li class="header__nav-item"><a class="header__nav-item-link" href="">Tour</a></li>
-            <li class="header__nav-item"><a class="header__nav-item-link" href="">Contact</a></li>
+            <li class="header__nav-item"><a class="header__nav-item-link js-menu-btn" href="#">Home</a></li>
+            <li class="header__nav-item"><a class="header__nav-item-link js-menu-btn" href="#band">Band</a></li>
+            <li class="header__nav-item"><a class="header__nav-item-link js-menu-btn" href="#tour">Tour</a></li>
+            <li class="header__nav-item"><a class="header__nav-item-link js-menu-btn" href="#contact">Contact</a></li>
             <li class="header__nav-item">
-                <a class="header__nav-item-link" href="">
+                <a class="header__nav-item-link js-menu-btn" href="#">
                     More
                     <i class="header__nav-item-icon ti-angle-down"></i>
                 </a>
-                <ul class="header__nav-item-sub-nav">
-                    <li class="header__sub-nav-item"><a class="header__sub-nav-item-link" href="">Merchant</a></li>
-                    <li class="header__sub-nav-item"><a class="header__sub-nav-item-link" href="">Extras</a></li>
-                    <li class="header__sub-nav-item"><a class="header__sub-nav-item-link" href="">Media</a></li>
+                <ul class="header__nav-item-sub-nav js-header-sub-nav">
+                    <li class="header__sub-nav-item"><a class="header__sub-nav-item-link js-menu-btn" href="#">Merchant</a></li>
+                    <li class="header__sub-nav-item"><a class="header__sub-nav-item-link js-menu-btn" href="#">Extras</a></li>
+                    <li class="header__sub-nav-item"><a class="header__sub-nav-item-link js-menu-btn" href="#">Media</a></li>
                 </ul>
             </li>
         </ul>
+
         <!--            Search Button-->
         <div class="header__search-btn">
             <i class="header__search-icon ti-search"></i>
@@ -46,7 +51,7 @@
 
     <div class="content">
         <!--        About section-->
-        <div class="content__section">
+        <div id="band" class="content__section">
             <h2 class="section__heading">The Band</h2>
             <p class="section__sub-heading">We love music</p>
             <p class="section__about-text">We have created a fictional band website. Lorem ipsum dolor sit amet,
@@ -74,7 +79,7 @@
         </div>
 
         <!--        Tour section-->
-        <div class="tour__section">
+        <div id="tour" class="tour__section">
             <div class="content__section">
                 <h2 class="section__heading text--white">TOUR DATES</h2>
                 <p class="section__sub-heading  text--white">Remember to book your tickets!</p>
@@ -100,7 +105,7 @@
                             <h3 class="places-heading">Paris</h3>
                             <p class="places-time">Fri 27 Nov 2022</p>
                             <div class="places-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                            <a class="places-buy-btn js-buy-ticket">Buy Tickets</a>
+                            <a class="btn js-buy-ticket">Buy Tickets</a>
                         </div>
                     </div>
                     <div class="col-3 col">
@@ -109,7 +114,7 @@
                             <h3 class="places-heading">New York</h3>
                             <p class="places-time">Sat 28 Nov 2022</p>
                             <div class="places-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                            <a class="places-buy-btn js-buy-ticket">Buy Tickets</a>
+                            <a class="btn js-buy-ticket">Buy Tickets</a>
                         </div>
                     </div>
                     <div class="col-3 col">
@@ -118,7 +123,7 @@
                             <h3 class="places-heading">San Francisco</h3>
                             <p class="places-time">Sun 29 Nov 2022</p>
                             <div class="places-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                            <a class="places-buy-btn js-buy-ticket">Buy Tickets</a>
+                            <a class="btn js-buy-ticket">Buy Tickets</a>
                         </div>
                     </div>
                 </div>
@@ -127,20 +132,20 @@
 
 
         <!--        Contact section-->
-        <div class="content__section">
+        <div id="contact" class="content__section">
             <h2 class="section__heading">Contact</h2>
             <p class="section__sub-heading">Fan? Drop a note!</p>
             <div class="row contact__content">
                 <div class="col col-half contact__info">
-                    <p class="section__text">
+                    <p class="contact__text">
                         <i class="contact__info-icon ti-location-pin"></i>
                         Chicago, US
                     </p>
-                    <p class="section__text">
+                    <p class="contact__text">
                         <i class="contact__info-icon ti-mobile"></i>
                         Phone: +12345-220
                     </p>
-                    <p class="section__text">
+                    <p class="contact__text">
                         <i class="contact__info-icon ti-email"></i>
                         Email: nhat@email.com
                     </p>
@@ -148,11 +153,11 @@
                 <div class="col col-half contact__form">
                     <form action="" class="contact__section">
                         <div class="row">
-                            <div class="col col-half">
+                            <div class="col col-half mt--16">
                                 <input type="text" name="" required id="" placeholder="Name"
                                        class="contact__form-input">
                             </div>
-                            <div class="col col-half">
+                            <div class="col col-half mt--16">
                                 <input type="email" name="" required id="" placeholder="Email"
                                        class="contact__form-input">
                             </div>
@@ -164,15 +169,26 @@
                                        class="contact__form-input">
                             </div>
                         </div>
-                        <input class="mt--16 contact__form-submit-btn" type="submit" value="Send">
+                        <input class="mt--16 contact__form-submit-btn btn" type="submit" value="Send">
                     </form>
                 </div>
             </div>
         </div>
-
+        <!--                    End contact section-->
+        <div class="map__section">
+            <img src="./assets/css/img/map.jpg" alt="Map" class="map__section-img">
+        </div>
     </div>
     <footer class="footer">
-
+        <div class="footer__social-lists">
+            <a href="" class="footer__social-link"><i class="footer__social-icon ti-facebook"></i></a>
+            <a href="" class="footer__social-link"><i class="footer__social-icon ti-instagram"></i></a>
+            <a href="" class="footer__social-link"><i class="footer__social-icon ti-twitter"></i></a>
+            <a href="" class="footer__social-link"><i class="footer__social-icon ti-linkedin"></i></a>
+            <a href="" class="footer__social-link"><i class="footer__social-icon ti-pinterest"></i></a>
+            <a href="" class="footer__social-link"><i class="footer__social-icon ti-youtube"></i></a>
+        </div>
+        <p class="footer__copyright">Made by <a href="" class="footer__copyright-link">Nhat Bui</a></p>
     </footer>
 </div>
 <div class="modal js-modal">
@@ -202,7 +218,7 @@
             </label>
             <input type="email" id="ticket__qty" class="modal__input" placeholder="Enter email address">
 
-            <div class="modal__button-wrapper">
+            <div class="btn modal__button-wrapper">
                 <a class="modal__buy-btn">
                     Pay
                     <i class="ti-check"></i>
@@ -217,5 +233,6 @@
     </div>
 </div>
 <script src="src/buyTicket.js"></script>
+<script src="src/menuHandler.js"></script>
 </body>
 </html>

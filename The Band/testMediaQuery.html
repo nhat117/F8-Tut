@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .pc,
+        .tablet,
+        .mobile {
+            font-size: 68px;
+            display: none;
+        }
+
+        /*Pc*/
+        @media (min-width: 1024px) {
+            .pc {
+                display: block;
+                color: red;
+            }
+        }
+
+        /*Tablet*/
+        @media (min-width: 767px) and(max-width: 1023px) {
+            .tablet {
+                display: block;
+            }
+        }
+
+        /*mobile*/
+        @media (max-width: 767px) {
+            .mobile {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+<h2 class="pc">Pc</h2>
+<h2 class="tablet">Tablet</h2>
+<h2 class="mobile">Mobile</h2>
+</body>
+</html>
